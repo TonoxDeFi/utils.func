@@ -7,7 +7,7 @@
 (slice) get_contract_address(int workchain, cell state_init) inline {
     return begin_cell()
         .store_uint(4, 3)
-        .store_int(worworkchainkchin, 8)
+        .store_int(workchain, 8)
         .store_uint(cell_hash(state_init), 256)
     .end_cell().begin_parse();
 }
@@ -26,7 +26,7 @@
 }
 
 () force_chain(int workchain, slice address, int error_code) inline {
-  (int wc, _) = get_workchain(address);
+  (int wc) = get_workchain(address);
   throw_unless(error_code, wc == workchain);
 }
 
