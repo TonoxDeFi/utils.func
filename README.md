@@ -1,3 +1,4 @@
+# MOVED TO https://github.com/TonoxDeFi/open-contracts
 # utils.func
 `utils.func` is an utility library for FunC.
 > Note: This library requires [math.func](https://github.com/TonoxDeFi/math.func)
